@@ -1,0 +1,92 @@
+.task-details {
+    max-width: 500px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.task-details h2 {
+    font-size: 1.5rem; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.task-details p {
+    font-size: 1rem; 
+    color: #666; 
+    margin: 5px 0; 
+}
+
+.task-details button {
+    display: inline-block; 
+    padding: 10px 15px; 
+    margin-top: 15px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.task-details button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+}
+
+.modal {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.modal-content {
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    max-width: 600px; 
+    width: 100%; 
+}
+
+.close-button {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    padding: 8px 12px; 
+    float: right; 
+}
+
+.close-button:hover {
+    background-color: #cc0000; 
+}
+
+@media (max-width: 768px) {
+    .task-details {
+        padding: 15px; 
+    }
+
+    .task-details h2 {
+        font-size: 1.3rem; 
+    }
+
+    .task-details p {
+        font-size: 0.9rem; 
+    }
+
+    .task-details button {
+        font-size: 0.9rem; 
+    }
+}
